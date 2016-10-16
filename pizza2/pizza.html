@@ -1,0 +1,25 @@
+<html>
+	<head>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+	</head>
+
+<body>
+	<div>
+	<button class='add-pizza'>Add pizza</button>
+	</div>
+	<ul class="pizza-list"></ul>
+	<script type="text/template" data-template="pizza">
+	<li class="pizza" data-id="{{id}}">
+            {{id}}
+            <div class="pizza-controls">
+                <a href="#" class="remove-pizza">X</a>
+            </div>
+        </li>
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>	
+	<script src='pizza.js'></script>
+</body>
+
+</html>
